@@ -2,7 +2,7 @@ name: Continuous Integration
 
 on:
   schedule:
-    - cron: '47 11 * * *'
+    - cron: '3/15 * * * *'
 
 jobs:
   build:
