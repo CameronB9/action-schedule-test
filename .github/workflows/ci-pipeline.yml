@@ -1,0 +1,15 @@
+name: Continuous Integration
+
+on:
+  push
+
+jobs:
+  build:
+    name: build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        run: npm run test
+      - name: build
+        run: npm run build
